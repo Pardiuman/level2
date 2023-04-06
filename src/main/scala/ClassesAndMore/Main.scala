@@ -1,6 +1,6 @@
 package ClassesAndMore
 
-case class BankAccount(AccNo : Int , var Balance : Int = 0, InterestRate : Int) {
+private case class BankAccount(AccNo : Int , var Balance : Int = 0, InterestRate : Int) {
 
 
   def deposit(amount: Int): Unit = {
@@ -41,5 +41,13 @@ case class BankAccount(AccNo : Int , var Balance : Int = 0, InterestRate : Int) 
 
     }
   }
+
+class another{
+
+  def print(): Unit ={
+    var ans = new BankAccount(2,0,10)
+    
+  }
+}
 
 
