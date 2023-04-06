@@ -1,5 +1,7 @@
 package methods
+
 import math.Numeric.Implicits.infixNumericOps
+
 
 object MapAndOthers {
 
