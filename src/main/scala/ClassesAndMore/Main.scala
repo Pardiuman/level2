@@ -18,23 +18,25 @@ private case class BankAccount(AccNo : Int , var Balance : Int = 0, InterestRate
     println("Hope you are happy with our service")
   }
 
-  def calculateInterest(): Int = {
+  private def calculateInterest(): Int = {
 
     var result = this.Balance * this.InterestRate / 100
     result
 
   }
 }
-  object Account{
+  object BankAccount{
     def main(args: Array[String]): Unit = {
 
       var person:List[BankAccount] = List(BankAccount(1,10000,10))
-
 
       person(0).deposit(500)
       println(person(0).Balance)
       println(person(0).calculateInterest())
       println(person)
+
+
+      def newAccount(): BankAccount = new BankAccount(AccNo = ???, Balance = ???, InterestRate = ???)
 
 
 
