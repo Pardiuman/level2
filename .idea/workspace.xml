@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c03d88cc-35e7-4163-9cea-3d07845fa5ac" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/ClassesAndMore/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ClassesAndMore/Main.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.1.3/classes/ClassesAndMore/Account.tasty" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.1.3/classes/ClassesAndMore/BankAccount.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.1.3/classes/ClassesAndMore/BankAccount.tasty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.1.3/classes/ClassesAndMore/another.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.1.3/classes/ClassesAndMore/another.tasty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/collectionAndMap/ArrayAndList.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/collectionAndMap/ArrayAndList.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.1.3/classes/collectionAndMap/ArrayAndList.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.1.3/classes/collectionAndMap/ArrayAndList.tasty" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
