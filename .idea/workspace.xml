@@ -49,7 +49,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.scala.settings.ScalaProjectSettingsConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.ArrayAndList">
+  <component name="RunManager" selected="Application.BinarySearch">
     <configuration name="Account" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="ClassesAndMore.Account" />
       <module name="level2" />
@@ -76,12 +76,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClassesAndMore.main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="ClassesAndMore.main" />
+    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="search.BinarySearch" />
       <module name="level2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ClassesAndMore.*" />
+          <option name="PATTERN" value="search.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,12 +89,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapAndOthers" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="methods.MapAndOthers" />
+    <configuration name="ClassesAndMore.main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="ClassesAndMore.main" />
       <module name="level2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="methods.*" />
+          <option name="PATTERN" value="ClassesAndMore.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,11 +117,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BinarySearch" />
         <item itemvalue="Application.ArrayAndList" />
         <item itemvalue="Application.anther" />
         <item itemvalue="Application.ClassesAndMore.main" />
         <item itemvalue="Application.Account" />
-        <item itemvalue="Application.MapAndOthers" />
       </list>
     </recent_temporary>
   </component>
@@ -149,6 +149,17 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/search/BinarySearch.scala</url>
+          <line>33</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

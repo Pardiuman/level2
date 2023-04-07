@@ -1,6 +1,6 @@
 package collectionAndMap
 
-import scala.collection.mutable.ArrayBuffer
+import scala.collection.mutable.{ArrayBuffer, ListBuffer}
 import scala.io.StdIn
 import scala.language.postfixOps
 
@@ -47,11 +47,20 @@ object ArrayAndList {
 
 
     var list = List(1,2,3,4,5)
-    list = list :+ 10  // we can do this with the help of list.appended
+    list = list :+ 10  // we can do this with the help of list.appended.
     list  = list.updated(5,6)
     println(list)  // list is immutable so we cannot add or remove elements in list, However if we want so
-                   // so we have to do it explicitly with :+ and reference this with old list
+                   // so we have to do it explicitly with :+ and reference this with old list.
 
+    list = list.appendedAll(List(7,8,9))
+    println(list)
+
+
+    val listBuff = ListBuffer(1,2,3,4) // it lets us to modify the list without making another one.
+    listBuff+=5  // this will not make a new list rather modify the existing one.
+    print("this is filtered one "+listBuff.filter(_%2 ==0))
+    println()
+    listBuff.foreach(print(_))
 
 
   }
