@@ -1,4 +1,4 @@
-package Bank
+package Project
 
 import scala.collection.mutable.ListBuffer
 import scala.io.StdIn
