@@ -1,5 +1,7 @@
 package search
 
+
+//  program that performs the binary search operation
 object BinarySearch {
 
   val arr =Array(1,2,3,4,5,6,7,8,9)
