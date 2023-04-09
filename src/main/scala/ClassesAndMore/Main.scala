@@ -1,6 +1,6 @@
 package ClassesAndMore
 
-private case class BankAccount(AccNo : Int , var Balance : Int = 0, InterestRate : Int) {
+case class BankAccount(AccNo : Int , var Balance : Int = 0, InterestRate : Int) {
 
 
   def deposit(amount: Int): Unit = {

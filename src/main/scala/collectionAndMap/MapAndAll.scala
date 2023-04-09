@@ -1,5 +1,6 @@
 package collectionAndMap
 
+import scala.collection.immutable.ListMap
 import scala.language.postfixOps
 
 object MapAndAll {
@@ -12,5 +13,8 @@ object MapAndAll {
     map = map + (2 -> "pardium")
     map.foreach((x,y) => println(s"$x is rollno of $y"))
 //    val anotehr = map + (1 -> "ilu")
+
+
+    var maplist = ListMap()
   }
 }
