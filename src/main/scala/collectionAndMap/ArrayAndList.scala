@@ -55,12 +55,37 @@ object ArrayAndList {
     list = list.appendedAll(List(7,8,9))
     println(list)
 
+    list = list.map(_*2)  //map function return a new list with the result
+
+    val rsult = list.reduce(_+_)
+    println("here is the reduce result:- "+ rsult)
+
+    list = list.filter(_%2==0)
+    println(list.toList)
+
 
     val listBuff = ListBuffer(1,2,3,4) // it lets us to modify the list without making another one.
     listBuff+=5  // this will not make a new list rather modify the existing one.
     print("this is filtered one "+listBuff.filter(_%2 ==0))
     println()
     listBuff.foreach(print(_))
+
+    println(listBuff.zip(List("a","b","c","d")))  // zip fucntion basically join two lists and return a new one having both content in pair
+
+    val name : List[String] = List("p","a","r","d","i","u","m")
+    println("here is reduced result of name list :- "+name.reduce(_+_))  // reduce is basically takes an element from list and perform operation on it then on second and add them
+
+    val result=listBuff.partition(_<3)  // partition basically divides in two as per given condition
+    println(result)
+
+    println(name.find(x => x == "r"))  // return result as some
+
+    println(listBuff.dropWhile(x=>x<5))  //dropwhile drop the element as per given condition but when its disturbed in between its get over there only.
+
+    //flat and flatmap is same with slight differnet we can flat the collections while using extra map function inside it
+    val flat = List(List(1,2,3,4,5),List(6,7,8,9))
+    println(flat.flatMap(_.map(_*2)))
+
 
 
   }
