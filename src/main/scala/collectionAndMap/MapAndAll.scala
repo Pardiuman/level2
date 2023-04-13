@@ -22,8 +22,12 @@ object MapAndAll {
     println(map)
 
 
-
-    var rollNo :Map[Int,String] = Map.empty
+    /*
+      this is real life example of map in which we can enter
+      student roll no. with name through input user
+    
+    */
+    var rollNo :Map[Int,String] = Map.empty   
 //    var indexedSystem = rollNo.toIndexSeq
     for(i <- 0 until 10 ){
       print("enter roll no.:- ")
