@@ -87,6 +87,9 @@ object ArrayAndList {
     println(flat.flatMap(_.map(_*2)))
 
 
+    var ans = (1 to 1000).toList
+    println(ans)
+
 
   }
 
