@@ -1,4 +1,4 @@
-package methods
+package inbuiltFunctions
 
 import math.Numeric.Implicits.infixNumericOps
 

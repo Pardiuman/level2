@@ -3,6 +3,7 @@ package Project
 import scala.annotation.tailrec
 import scala.collection.mutable.ListBuffer
 import scala.io.StdIn
+import scala.util.matching.Regex.Match
 
  private trait OtherService{  // private trait access onl in same file,if protected access in any file in same package
   def withdraw(AccNo:Int,amt :Int): Unit
@@ -10,53 +11,49 @@ import scala.io.StdIn
 
 }
 
-case class Banking(accNo: Int, name: String, amount: Int)
+case class Bank(accNo: Int, name: String, var amount: Int)
 
- private object Bank extends OtherService {
-  private var list :ListBuffer[Banking] = ListBuffer.empty
+object Bank extends OtherService {
+  private val list :ListBuffer[Bank] = ListBuffer.empty
   var accNo = 0
 
-
   override def withdraw(AccNo: Int, amt: Int): Unit = {
-
-
-
-    var result = list.indexWhere(_.accNo == AccNo)
+    val result = list.indexWhere(_.accNo == AccNo)
     if (list(result).amount < amt) {
       println("oops, it seems like you don't have enough money")
       return -1
     }
     else {
-      list(result).amount - amt
-      println("Amount withdraw successfully, Enjoy Sir")
+      list(result).amount -= amt
+      println(s"Amount withdraw successfully,current balance is ${list(result).amount} Enjoy Sir")
     }
 
   }
 
   override def addAmount(AccNo: Int, amt: Int): Unit = {
-    var result = list.indexWhere(_.accNo == AccNo)
-    list(result).amount + amt
-    println("money added successfully, visit again Sir")
+    val result = list.indexWhere(_.accNo == AccNo)
+    list(result).amount += amt
+    println(s"money added successfully, current balance is${list(result).amount} visit again Sir")
   }
 
   private def existingCustomer(): Unit ={
     println("enter your credentials")
     print("enter AccNo. :- " )
     accNo = StdIn.readInt()
-    var index = list.indexWhere(_.accNo==accNo)
-    var customer = list(index)
+    val index = list.indexWhere(_.accNo==accNo)
+    val customer = list(index)
     println(s"welcome ${list(index).name}")
     println(s"your balance is :- ${customer.amount}")
     services(accNo)
   }
 
-  private def newCustomer(): Banking = {
+  private def newCustomer(): Bank = {
     print("enter the good name Sir :- ")
-    var name = StdIn.readLine()
+    val name = StdIn.readLine()
     accNo = list.size + 1
     println("with how much money you want to open your account :- ")
-    var amount = StdIn.readInt()
-    var customer = Banking(accNo, name, amount)
+    val amount = StdIn.readInt()
+    val customer = Bank(accNo, name, amount)
     list += customer
 
     println(s"here is your bank details:- name = ${customer.name} and Accno. = ${customer.accNo} and amount = ${customer.amount}")
@@ -66,14 +63,14 @@ case class Banking(accNo: Int, name: String, amount: Int)
   }
    private def services(accNo:Int): Unit ={   // private, so only in this class we can access this method
     println("if you want any other services press 'S' ")
-     var serviceInput = StdIn.readLine()
+     val serviceInput = StdIn.readLine()
      if (serviceInput.equals("s")) {
        rec(accNo)
      }
       @tailrec
       def rec(accNo:Int): Unit ={
         println("if you want to withdraw money press 'w' and if you want to add press 'A' ")
-        var input = StdIn.readLine()
+        val input = StdIn.readLine()
         if (input.equals("w")) {
           println("enter the amount you want to withdraw")
           withdraw(accNo, amt = StdIn.readInt())
@@ -101,6 +98,9 @@ case class Banking(accNo: Int, name: String, amount: Int)
   }
 
   def main(args: Array[String]): Unit = {
+    var one = Bank(1,"pardum",500)
+    var two = Bank(2,"dhankhar",1000)
+    list += one += two
     start()
   }
 }
