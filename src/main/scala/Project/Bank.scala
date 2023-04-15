@@ -1,5 +1,6 @@
 package Project
 
+import scala.annotation.tailrec
 import scala.collection.mutable.ListBuffer
 import scala.io.StdIn
 
@@ -9,11 +10,15 @@ import scala.io.StdIn
 
 }
 
+case class Banking(accNo: Int, name: String, amount: Int)
+
  private object Bank extends OtherService {
   private var list :ListBuffer[Banking] = ListBuffer.empty
-  case class Banking(accNo: Int, name: String, amount: Int)
+  var accNo = 0
+
 
   override def withdraw(AccNo: Int, amt: Int): Unit = {
+
 
 
     var result = list.indexWhere(_.accNo == AccNo)
@@ -37,7 +42,7 @@ import scala.io.StdIn
   private def existingCustomer(): Unit ={
     println("enter your credentials")
     print("enter AccNo. :- " )
-    val accNo = StdIn.readInt()
+    accNo = StdIn.readInt()
     var index = list.indexWhere(_.accNo==accNo)
     var customer = list(index)
     println(s"welcome ${list(index).name}")
@@ -48,7 +53,7 @@ import scala.io.StdIn
   private def newCustomer(): Banking = {
     print("enter the good name Sir :- ")
     var name = StdIn.readLine()
-    var accNo: Int = list.size + 1
+    accNo = list.size + 1
     println("with how much money you want to open your account :- ")
     var amount = StdIn.readInt()
     var customer = Banking(accNo, name, amount)
@@ -60,7 +65,8 @@ import scala.io.StdIn
     customer
   }
 
-  private def services(accNo:Int): Unit ={   // private, so only in this class we can access this method
+  @tailrec
+   private def services(accNo:Int): Unit ={   // private, so only in this class we can access this method
     println("if you want any other services press 'S' ")
     var serviceInput = StdIn.readLine()
     if (serviceInput.equals("s")) {
@@ -77,16 +83,17 @@ import scala.io.StdIn
         addAmount(accNo, StdIn.readInt())
       }
     }
+    services(accNo)
 
   }
   protected def start(): Unit ={   // protected, only this class or subclass can access it
     println("Greeting of the day")
     println("Press 'Y' If you are existing customer, 'N' for new Customer")
     val input = StdIn.readLine()
-    if(input.equals("y") || input.equals("yes") ){
+    if(input.equalsIgnoreCase("y")){
       existingCustomer()
     }
-    if(input.equals("n")){
+    if(input.equalsIgnoreCase("n")){
       newCustomer()
     }
   }
