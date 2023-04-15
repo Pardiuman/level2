@@ -3,6 +3,7 @@ package collectionAndMap
 import scala.collection.mutable.{ArrayBuffer, ListBuffer}
 import scala.io.StdIn
 import scala.language.postfixOps
+import scala.util.Random
 
 object ArrayAndList {
 
@@ -85,6 +86,26 @@ object ArrayAndList {
     //flat and flatmap is same with slight differnet we can flat the collections while using extra map function inside it
     val flat = List(List(1,2,3,4,5),List(6,7,8,9))
     println(flat.flatMap(_.map(_*2)))
+
+
+    var ans = (1 to 1000).toList
+    println(ans)
+
+
+
+    /*
+      real life example for List
+      like music player, we can add the songfs into playlist
+    */
+    val music = List("first_song","second_song","third_song","fourth_song","fifth_song","sixth_song")
+    var random = Random.nextInt(music.length)
+    val shuffle = (add:List[String]) => {
+      var index = Random.nextInt(music.length)
+      println(music(index))
+    }
+    println("shuffle the song")
+    shuffle(music)
+
 
 
 

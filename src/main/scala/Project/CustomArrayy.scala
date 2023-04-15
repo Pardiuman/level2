@@ -1,4 +1,4 @@
-package Custom
+package Project
 
 private class Arrayy[T : Manifest] (initialSize : Int = 10) {
 

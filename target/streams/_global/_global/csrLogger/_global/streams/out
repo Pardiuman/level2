@@ -1,4 +1,2 @@
-[debug] downloaded https://repo1.maven.org/maven2/dev/ludovic/netlib/lapack/2.2.1/lapack-2.2.1-javadoc.jar
-[debug] downloaded https://repo1.maven.org/maven2/com/univocity/univocity-parsers/2.9.1/univocity-parsers-2.9.1-sources.jar
-[debug] downloaded https://repo1.maven.org/maven2/org/typelevel/spire_2.12/0.17.0/spire_2.12-0.17.0-javadoc.jar
-[debug] downloaded https://repo1.maven.org/maven2/com/chuusai/shapeless_2.12/2.3.3/shapeless_2.12-2.3.3-javadoc.jar
+[debug] downloaded https://repo1.maven.org/maven2/org/apache/spark/spark-core_3/2.2.3/spark-core_3-2.2.3.pom
+[debug] downloaded https://repo1.maven.org/maven2/org/apache/spark/spark-core_3/2.2.3/spark-core_3-2.2.3.pom.sha1
