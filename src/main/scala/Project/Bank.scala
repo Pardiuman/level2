@@ -82,20 +82,18 @@ object Bank extends OtherService {
         }
         rec(accNo)
       }
-
-
-   }
-  protected def start(): Unit ={   // protected, only this class or subclass can access it
-    println("Greeting of the day")
-    println("Press 'Y' If you are existing customer, 'N' for new Customer")
-    val input = StdIn.readLine()
-    if(input.equalsIgnoreCase("y")){
-      existingCustomer()
     }
-    if(input.equalsIgnoreCase("n")){
-      newCustomer()
+    protected def start(): Unit ={   // protected, only this class or subclass can access it
+      println("Greeting of the day")
+      println("Press 'Y' If you are existing customer, 'N' for new Customer")
+      val input = StdIn.readLine()
+      if(input.equalsIgnoreCase("y")){
+        existingCustomer()
+      }
+      if(input.equalsIgnoreCase("n")){
+        newCustomer()
+      }
     }
-  }
 
   def main(args: Array[String]): Unit = {
     var one = Bank(1,"pardum",500)

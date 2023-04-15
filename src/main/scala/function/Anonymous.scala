@@ -29,6 +29,11 @@ object Anonymous {
     println(multiply)
 
 
+    var anonymous = (x:Int ,y:Int) => x/y
+    def divide (x:Int,y:Int,f:(Int,Int) => Int) = f(x,y)
+
+    print(divide(10,2,anonymous))  // we can pass anonymous function into the function rather than writing logic there
+
   }
 
 }
