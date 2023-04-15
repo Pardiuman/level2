@@ -23,12 +23,12 @@ case class Banking(accNo: Int, name: String, amount: Int)
 
     var result = list.indexWhere(_.accNo == AccNo)
     if (list(result).amount < amt) {
-      print("oops, it seems like you don't have enough money")
+      println("oops, it seems like you don't have enough money")
       return -1
     }
     else {
       list(result).amount - amt
-      print("Amount withdraw successfully, Enjoy Sir")
+      println("Amount withdraw successfully, Enjoy Sir")
     }
 
   }
@@ -36,7 +36,7 @@ case class Banking(accNo: Int, name: String, amount: Int)
   override def addAmount(AccNo: Int, amt: Int): Unit = {
     var result = list.indexWhere(_.accNo == AccNo)
     list(result).amount + amt
-    print("money added successfully, visit again Sir")
+    println("money added successfully, visit again Sir")
   }
 
   private def existingCustomer(): Unit ={
@@ -64,28 +64,30 @@ case class Banking(accNo: Int, name: String, amount: Int)
 
     customer
   }
-
-  @tailrec
    private def services(accNo:Int): Unit ={   // private, so only in this class we can access this method
     println("if you want any other services press 'S' ")
-    var serviceInput = StdIn.readLine()
-    if (serviceInput.equals("s")) {
+     var serviceInput = StdIn.readLine()
+     if (serviceInput.equals("s")) {
+       rec(accNo)
+     }
+      @tailrec
+      def rec(accNo:Int): Unit ={
+        println("if you want to withdraw money press 'w' and if you want to add press 'A' ")
+        var input = StdIn.readLine()
+        if (input.equals("w")) {
+          println("enter the amount you want to withdraw")
+          withdraw(accNo, amt = StdIn.readInt())
 
-      println("if you want to withdraw money press 'w' and if you want to add press 'A' ")
-      var input = StdIn.readLine()
-      if (input.equals("w")) {
-        println("enter the amount you want to withdraw")
-        withdraw(accNo, amt = StdIn.readInt())
-
+        }
+        if (input.equals("a")) {
+          println("enter the amount you want to add")
+          addAmount(accNo, StdIn.readInt())
+        }
+        rec(accNo)
       }
-      if (input.equals("a")) {
-        println("enter the amount you want to add")
-        addAmount(accNo, StdIn.readInt())
-      }
-    }
-    services(accNo)
 
-  }
+
+   }
   protected def start(): Unit ={   // protected, only this class or subclass can access it
     println("Greeting of the day")
     println("Press 'Y' If you are existing customer, 'N' for new Customer")

@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c03d88cc-35e7-4163-9cea-3d07845fa5ac" name="Changes" comment="perform map and linear search">
-      <change beforePath="$PROJECT_DIR$/.idea/modules/level2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/level2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/Project/Bank.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Project/Bank.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.1.3/classes/Custom/Arrayy.tasty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.1.3/classes/Custom/Custom.tasty" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-3.1.3/classes/Project/Bank.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.1.3/classes/Project/Bank.tasty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.1.3/classes/Project/Banking.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.1.3/classes/Project/Banking.tasty" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-3.1.3/classes/Project/OtherService.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.1.3/classes/Project/OtherService.tasty" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-3.1.3/classes/Project/customer.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.1.3/classes/Project/customer.tasty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/_global/_global/csrLogger/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/_global/csrLogger/_global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/_global/update/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/update/_global/streams/out" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,11 +72,11 @@
       </method>
     </configuration>
     <configuration name="Arrayy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Custom.Arrayy" />
+      <option name="MAIN_CLASS_NAME" value="Project.Arrayy" />
       <module name="level2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Custom.*" />
+          <option name="PATTERN" value="Project.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
