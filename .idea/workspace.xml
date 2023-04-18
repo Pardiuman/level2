@@ -6,13 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c03d88cc-35e7-4163-9cea-3d07845fa5ac" name="Changes" comment="perform map and linear search">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Project/Bank.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Project/Bank.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.1.3/classes/Custom/Arrayy.tasty" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.1.3/classes/Custom/Custom.tasty" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.1.3/classes/Project/Bank.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.1.3/classes/Project/Bank.tasty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.1.3/classes/Project/Banking.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.1.3/classes/Project/Banking.tasty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.1.3/classes/Project/OtherService.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.1.3/classes/Project/OtherService.tasty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-3.1.3/classes/Project/customer.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.1.3/classes/Project/customer.tasty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/collectionAndMap/MapAndAll.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/collectionAndMap/MapAndAll.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/collectionAndMap/SetAndTuple.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/concurrency/Concurrency.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/concurrency/Concurrency.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.1.3/classes/com/concurrency/Concurrency.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.1.3/classes/com/concurrency/Concurrency.tasty" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,13 +54,13 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.Mappings&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Bank">
-    <configuration name="ArrayAndList" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="collectionAndMap.ArrayAndList" />
+  <component name="RunManager" selected="Application.Concurrency">
+    <configuration name="Anonymous" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="function.Anonymous" />
       <module name="level2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="collectionAndMap.*" />
+          <option name="PATTERN" value="function.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -71,12 +68,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Arrayy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Project.Arrayy" />
+    <configuration name="ArrayAndList" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="collectionAndMap.ArrayAndList" />
       <module name="level2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Project.*" />
+          <option name="PATTERN" value="collectionAndMap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,12 +94,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapAndAll" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="collectionAndMap.MapAndAll" />
+    <configuration name="Concurrency" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.concurrency.Concurrency" />
       <module name="level2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="collectionAndMap.*" />
+          <option name="PATTERN" value="com.concurrency.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,12 +107,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SetAndTuple" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="collectionAndMap.SetAndTuple" />
+    <configuration name="SetCollection" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.collectionAndMap.SetCollection" />
       <module name="level2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="collectionAndMap.*" />
+          <option name="PATTERN" value="com.collectionAndMap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Concurrency" />
+        <item itemvalue="Application.SetCollection" />
+        <item itemvalue="Application.Anonymous" />
         <item itemvalue="Application.Bank" />
         <item itemvalue="Application.ArrayAndList" />
-        <item itemvalue="Application.MapAndAll" />
-        <item itemvalue="Application.SetAndTuple" />
-        <item itemvalue="Application.Arrayy" />
       </list>
     </recent_temporary>
   </component>
