@@ -1,5 +1,9 @@
 package com.concurrency
-import scala.collection.parallel.CollectionConverters._
+import scala.collection.parallel.CollectionConverters.*
+import scala.collection.parallel.ParSeq
+import scala.collection.parallel.mutable.{ParArray, ParArrayCombiner}
+import scala.collection.parallel.*
+
 
 object Concurrency {
 
@@ -16,6 +20,15 @@ object Concurrency {
 
     val result = concurrent.map((x) => x*2).filter(_ % 2 == 0).toList
     println(result)
+
+
+
+    val arr  = ParArray[Int](1,2,3,4,5,6,7,8,9)
+    println(arr)
+
+    val map = ParMap[Int,Int](1 -> 1, 2->2 ,3 -> 3,4 -> 4, 5-> 5)
+    println(map)
+
 
   }
 

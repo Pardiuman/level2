@@ -38,5 +38,11 @@ object MapAndAll {
     }
     println(rollNo)
     rollNo.foreach(println(_))
+
+
+    /*
+    as we discussed in set all those are also available
+      in map also like :- map,hashMap,listMap,treeMap
+     */
   }
 }
