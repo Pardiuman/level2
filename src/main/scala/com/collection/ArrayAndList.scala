@@ -1,4 +1,4 @@
-package com.collectionAndMap
+package com.collection
 
 import scala.collection.mutable.{ArrayBuffer, ListBuffer}
 import scala.io.StdIn
@@ -8,6 +8,7 @@ import scala.util.Random
 object ArrayAndList {
 
   def main(args: Array[String]): Unit = {
+
 
     val arr = Array(1,2,3,4,5)  //create array
     arr(0) = 10  // update the value at 0th position
@@ -48,7 +49,8 @@ object ArrayAndList {
 
 
     var list = List(1,2,3,4,5)
-    list = list :+ 10  // we can do this with the help of list.appended.
+    println(list.contains(5))
+    list :+= 10  // we can do this with the help of list.appended.
     list  = list.updated(5,6)
     println(list)  // list is immutable so we cannot add or remove elements in list, However if we want so
                    // so we have to do it explicitly with :+ and reference this with old list.
@@ -79,7 +81,7 @@ object ArrayAndList {
     val result=listBuff.partition(_<3)  // partition basically divides in two as per given condition
     println(result)
 
-    println(name.find(x => x == "r"))  // return result as some
+    println(name.find(_.equals("r")))  // return result
 
     println(listBuff.dropWhile(x=>x<5))  //dropwhile drop the element as per given condition but when its disturbed in between its get over there only.
 
@@ -98,7 +100,7 @@ object ArrayAndList {
       like music player, we can add the songfs into playlist
     */
     val music = List("first_song","second_song","third_song","fourth_song","fifth_song","sixth_song")
-    var random = Random.nextInt(music.length)
+//    var random = Random.nextInt(music.length)
     val shuffle = (add:List[String]) => {
       var index = Random.nextInt(music.length)
       println(music(index))

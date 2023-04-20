@@ -1,4 +1,4 @@
-package com.collectionAndMap
+package com.collection
 
 import scala.collection.immutable.ListMap
 import scala.collection.mutable

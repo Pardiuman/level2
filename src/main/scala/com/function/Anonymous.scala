@@ -16,6 +16,12 @@ object Anonymous {
     println(subtract(5))
 
 
+    def anno (factor:Int):Int => Unit = {   // this is also the function that takes an argument and return function
+      (x:Int) => println(x*factor)
+    }
+
+    var two = anno(2)
+    println(two(2))
 
     val deff = (x:Int) => println(x) // anonymous function
     deff(4)
