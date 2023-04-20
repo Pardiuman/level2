@@ -1,4 +1,4 @@
-package com.collectionAndMap
+package com.collection
 
 import scala.collection.mutable.{ArrayBuffer, ListBuffer}
 import scala.io.StdIn
@@ -8,6 +8,7 @@ import scala.util.Random
 object ArrayAndList {
 
   def main(args: Array[String]): Unit = {
+
 
     val arr = Array(1,2,3,4,5)  //create array
     arr(0) = 10  // update the value at 0th position
@@ -48,6 +49,7 @@ object ArrayAndList {
 
 
     var list = List(1,2,3,4,5)
+    println(list.contains(5))
     list = list :+ 10  // we can do this with the help of list.appended.
     list  = list.updated(5,6)
     println(list)  // list is immutable so we cannot add or remove elements in list, However if we want so

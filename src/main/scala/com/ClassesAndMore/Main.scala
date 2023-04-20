@@ -48,7 +48,8 @@ class another{
 
   def print(): Unit ={
     var ans = new BankAccount(2,0,10)
-    
+
+
   }
 }
 

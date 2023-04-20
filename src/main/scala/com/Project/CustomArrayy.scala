@@ -1,6 +1,6 @@
 package com.Project
 
-private class Arrayy[T : Manifest] (initialSize : Int = 10) {
+private class Arrayy[T: Manifest] (initialSize : Int = 10) {
 
   protected var arr: Array[T] = new Array[T](initialSize)
   protected var curr = 0
@@ -38,7 +38,7 @@ private class Arrayy[T : Manifest] (initialSize : Int = 10) {
     }
   }
 
-class Custom[T:Manifest](initialSize : Int = 10) extends Arrayy[T](initialSize) {
+class Custom[T: Manifest](initialSize : Int = 10) extends Arrayy[T](initialSize) {
 
 
 

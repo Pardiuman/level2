@@ -1,4 +1,4 @@
-package com.collectionAndMap
+package com.collection
 
 import scala.collection.*
 import scala.collection.immutable.ListSet
@@ -19,6 +19,10 @@ object SetCollection {
 
     val sortedSet = SortedSet(5,3,8,6,5,3,1,6,8,0)    // when we created sortedSet it automatically select the type of treeset
     println(sortedSet)
+
+
+    val multiple = sortedSet.map(_*2)
+    println(multiple)
 
   }
 
