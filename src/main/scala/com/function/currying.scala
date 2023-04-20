@@ -6,7 +6,7 @@ object currying {
 
 
     def add(x:Int,y:Int):Int =  x+y
-    val another = (10,20,_:Int)  //partially applied
+    val another = add(10,_:Int)  //partially applied
     println(another(30))
 
 
@@ -15,9 +15,9 @@ object currying {
     val result = subtract(10)_    //function currying
     println(result(5))
 
-    val addition = (add _).curried  // we can make any function curried by using .curried on any function
-    addition(1)
-    println(addition(2))
+    val addition = add.curried  // we can make any function curried by using .curried on any function
+    val firstOperand = addition(1)
+    println(firstOperand(2))
 
 
 
