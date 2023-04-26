@@ -17,7 +17,9 @@ object testing {
     println(seq)
 
     var vector = Vector(2,3,34,34,23,54)
+    vector:+=50
     println(vector)
+
 
     val lazzyList = LazyList(1,2,3,4,5,6)
     println(lazzyList(4))

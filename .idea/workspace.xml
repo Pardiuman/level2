@@ -6,7 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="c03d88cc-35e7-4163-9cea-3d07845fa5ac" name="Changes" comment="perform map and linear search">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/function/currying.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/function/currying.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/ClassesAndMore/Main.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/testing.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/testing.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.1.3/classes/com/ClassesAndMore/BankAccount.tasty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.1.3/classes/com/ClassesAndMore/another.tasty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.1.3/classes/com/other.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.1.3/classes/com/other.tasty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-3.1.3/classes/com/testing.tasty" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-3.1.3/classes/com/testing.tasty" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,20 +56,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.Mappings&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.currying">
-    <configuration name="Anonymous" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.function.Anonymous" />
-      <module name="level2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.function.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.testingOut">
     <configuration name="ArrayAndList" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.collection.ArrayAndList" />
       <module name="level2" />
@@ -78,12 +70,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SetCollection" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.collection.SetCollection" />
+    <configuration name="anotherFunction" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.aked.anotherFunction" />
       <module name="level2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.collection.*" />
+          <option name="PATTERN" value="com.aked.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,13 +109,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="testingOut" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.aked.testingOut" />
+      <module name="level2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aked.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.testingOut" />
+        <item itemvalue="Application.anotherFunction" />
+        <item itemvalue="Application.other" />
         <item itemvalue="Application.currying" />
         <item itemvalue="Application.ArrayAndList" />
-        <item itemvalue="Application.Anonymous" />
-        <item itemvalue="Application.other" />
-        <item itemvalue="Application.SetCollection" />
       </list>
     </recent_temporary>
   </component>
